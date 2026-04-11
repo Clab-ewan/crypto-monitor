@@ -1,0 +1,17 @@
+refresh_seconds = 30
+currency = "eur"
+
+[[assets]]
+id     = "bitcoin"
+symbol = "BTC"
+amount = 0.5
+
+[[assets]]
+id     = "ethereum"
+symbol = "ETH"
+amount = 3.2
+
+[[assets]]
+id     = "solana"
+symbol = "SOL"
+amount = 50.0

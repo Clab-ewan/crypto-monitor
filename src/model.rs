@@ -1,17 +1,17 @@
 use serde::Deserialize;
 
-#[derive(Deserialize)]
+#[derive(Deserialize, Debug)]
 pub struct Asset {
     id: String,
     symbol: String,
-    amount: u8,
+    amount: f64,
 }
 
 #[derive(Deserialize)]
 pub struct PriceData{
     id: String,
     price: u128,
-    vol: u8,
+    vol: f64,
 }
 
 #[derive(Debug)]

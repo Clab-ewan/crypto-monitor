@@ -2,9 +2,10 @@ use serde::Deserialize;
 
 #[derive(Deserialize, Debug)]
 pub struct Asset {
-    id: String,
-    symbol: String,
-    amount: f64,
+    pub id: String,
+    pub name: String,
+    pub symbol: String,
+    pub amount: f64,
 }
 
 #[derive(Deserialize)]

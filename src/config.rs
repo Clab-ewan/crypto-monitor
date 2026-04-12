@@ -3,9 +3,9 @@ use crate::model::Asset;
 use std::fs;
 #[derive(Deserialize, Debug)]
 pub struct Config {
-    refresh_seconds: u8,
-    currency: String,
-    assets: Vec<Asset>,
+    pub refresh_seconds: u8,
+    pub currency: String,
+    pub assets: Vec<Asset>,
 }
 
 impl Config {

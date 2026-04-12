@@ -3,15 +3,18 @@ currency = "eur"
 
 [[assets]]
 id     = "bitcoin"
+name = "Bitcoin"
 symbol = "BTC"
 amount = 0.5
 
 [[assets]]
 id     = "ethereum"
+name = "Ethereum"
 symbol = "ETH"
 amount = 3.2
 
 [[assets]]
 id     = "solana"
+name = "Solana"
 symbol = "SOL"
 amount = 50.0

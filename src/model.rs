@@ -20,15 +20,15 @@ pub struct PortfolioRow {
 }
 
 impl PortfolioRow {
-    pub fn build(assets: &Vec<Asset>, api_res: CoinPrices, config: Config) -> Vec<PortfolioRow> {
+    pub fn build(assets: &Vec<Asset>, api_result: &CoinPrices, config: &Config) -> Vec<PortfolioRow> {
         let mut portfolio: Vec<PortfolioRow> = Vec::new();
         for a in assets {
             let row: PortfolioRow = PortfolioRow {
                 id: a.id.clone(),
                 amount: a.amount,
-                price: api_res[&a.id][&config.currency],
-                curr_24h_change: api_res[&a.id][&format!("{}_24h_change", config.currency)],
-                value: a.amount * api_res[&a.id][&config.currency],
+                price: api_result[&a.id][&config.currency],
+                curr_24h_change: api_result[&a.id][&format!("{}_24h_change", config.currency)],
+                value: a.amount * api_result[&a.id][&config.currency],
             };
             portfolio.push(row);
         }

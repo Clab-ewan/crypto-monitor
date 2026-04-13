@@ -1,7 +1,8 @@
 refresh_seconds = 30
 currency = "eur"
 
-[[assets]]
+# Assets must be based on the CoinGecko denominations
+[[assets]] 
 id     = "bitcoin"
 name = "Bitcoin"
 symbol = "BTC"

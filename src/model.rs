@@ -12,11 +12,11 @@ pub struct Asset {
 
 #[derive(Debug)]
 pub struct PortfolioRow {
-    id: String,
-    amount: f64,
-    price: f64,
-    curr_24h_change: f64,
-    value: f64,
+    pub id: String,
+    pub amount: f64,
+    pub price: f64,
+    pub curr_24h_change: f64,
+    pub value: f64,
 }
 
 impl PortfolioRow {

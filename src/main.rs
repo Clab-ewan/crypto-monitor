@@ -14,7 +14,6 @@ async fn main() {
     let config = Config::new(file_path);
     let client = reqwest::Client::new();
     let api_result = call(client, &config).await.expect("problem in the api return");
-    println!("{:?}", api_result);
     let portfolio = PortfolioRow::build(&config.assets, &api_result, &config);
-    println!("{:?}", portfolio);
+    display::render(&portfolio, &config.currency);
 }
